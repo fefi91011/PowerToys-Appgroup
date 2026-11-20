@@ -467,6 +467,9 @@
       <Deploy />
     </Project>
   </Folder>
+  <Folder Name="/modules/AppGroups/">
+    <Project Path="src/modules/AppGroups/AppGroupsModuleInterface/AppGroupsModuleInterface.vcxproj" Id="7c4f1c92-8b2d-4f2e-9b06-5d1a3e7f60c4" />
+  </Folder>
   <Folder Name="/modules/CropAndLock/">
     <Project Path="src/modules/CropAndLock/CropAndLock/CropAndLock.vcxproj" Id="f5e1146e-b7b3-4e11-85fd-270a500bd78c" />
     <Project Path="src/modules/CropAndLock/CropAndLockModuleInterface/CropAndLockModuleInterface.vcxproj" Id="3157fa75-86cf-4ee2-8f62-c43f776493c6" />

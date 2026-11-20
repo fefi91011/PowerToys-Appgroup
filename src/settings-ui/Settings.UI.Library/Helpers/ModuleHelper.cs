@@ -51,6 +51,7 @@ namespace Microsoft.PowerToys.Settings.UI.Library.Helpers
             {
                 ModuleType.AdvancedPaste => generalSettingsConfig.Enabled.AdvancedPaste,
                 ModuleType.AlwaysOnTop => generalSettingsConfig.Enabled.AlwaysOnTop,
+                ModuleType.AppGroups => generalSettingsConfig.Enabled.AppGroups,
                 ModuleType.AutoHideCursor => generalSettingsConfig.Enabled.AutoHideCursor,
                 ModuleType.Awake => generalSettingsConfig.Enabled.Awake,
                 ModuleType.CmdPal => generalSettingsConfig.Enabled.CmdPal,
@@ -95,6 +96,7 @@ namespace Microsoft.PowerToys.Settings.UI.Library.Helpers
             {
                 case ModuleType.AdvancedPaste: generalSettingsConfig.Enabled.AdvancedPaste = isEnabled; break;
                 case ModuleType.AlwaysOnTop: generalSettingsConfig.Enabled.AlwaysOnTop = isEnabled; break;
+                case ModuleType.AppGroups: generalSettingsConfig.Enabled.AppGroups = isEnabled; break;
                 case ModuleType.AutoHideCursor: generalSettingsConfig.Enabled.AutoHideCursor = isEnabled; break;
                 case ModuleType.Awake: generalSettingsConfig.Enabled.Awake = isEnabled; break;
                 case ModuleType.CmdPal: generalSettingsConfig.Enabled.CmdPal = isEnabled; break;
@@ -142,6 +144,7 @@ namespace Microsoft.PowerToys.Settings.UI.Library.Helpers
             {
                 ModuleType.AdvancedPaste => AdvancedPasteSettings.ModuleName,
                 ModuleType.AlwaysOnTop => AlwaysOnTopSettings.ModuleName,
+                ModuleType.AppGroups => AppGroupsSettings.ModuleName,
                 ModuleType.AutoHideCursor => AutoHideCursorSettings.ModuleName,
                 ModuleType.Awake => AwakeSettings.ModuleName,
                 ModuleType.CmdPal => "CmdPal", // No dedicated settings class

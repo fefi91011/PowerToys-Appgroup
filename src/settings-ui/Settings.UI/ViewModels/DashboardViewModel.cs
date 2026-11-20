@@ -490,6 +490,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
                 ModuleType.CmdPal => GetModuleItemsCmdPal(),
                 ModuleType.ColorPicker => GetModuleItemsColorPicker(),
                 ModuleType.CropAndLock => GetModuleItemsCropAndLock(),
+                ModuleType.AppGroups => GetModuleItemsAppGroups(),
                 ModuleType.EnvironmentVariables => GetModuleItemsEnvironmentVariables(),
                 ModuleType.FancyZones => GetModuleItemsFancyZones(),
                 ModuleType.FindMyMouse => GetModuleItemsFindMyMouse(),
@@ -579,6 +580,15 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var list = new List<DashboardModuleItem>
             {
                 new DashboardModuleButtonItem() { ButtonTitle = resourceLoader.GetString("EnvironmentVariables_LaunchButtonControl/Header"), IsButtonDescriptionVisible = true, ButtonDescription = resourceLoader.GetString("EnvironmentVariables_LaunchButtonControl/Description"), ButtonGlyph = "ms-appx:///Assets/Settings/Icons/EnvironmentVariables.png", ButtonClickHandler = EnvironmentVariablesLaunchClicked },
+            };
+            return new ObservableCollection<DashboardModuleItem>(list);
+        }
+
+        private ObservableCollection<DashboardModuleItem> GetModuleItemsAppGroups()
+        {
+            var list = new List<DashboardModuleItem>
+            {
+                new DashboardModuleButtonItem() { ButtonTitle = resourceLoader.GetString("AppGroups_LaunchButtonControl/Header"), IsButtonDescriptionVisible = true, ButtonDescription = resourceLoader.GetString("AppGroups_LaunchButtonControl/Description"), ButtonGlyph = "ms-appx:///Assets/Settings/Icons/AppGroups.png", ButtonClickHandler = AppGroupsLaunchClicked },
             };
             return new ObservableCollection<DashboardModuleItem>(list);
         }
@@ -842,6 +852,15 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
         internal void SWVersionButtonClicked()
         {
             NavigationService.Navigate(typeof(GeneralPage));
+        }
+
+        private void AppGroupsLaunchClicked(object sender, RoutedEventArgs e)
+        {
+            // Create a new group right from the dashboard, then open its editor.
+            var settingsUtils = SettingsUtils.Default;
+            var appGroupsViewModel = new AppGroupsViewModel(settingsUtils, SettingsRepository<GeneralSettings>.GetInstance(settingsUtils), SettingsRepository<AppGroupsSettings>.GetInstance(settingsUtils), SendConfigMSG);
+            appGroupsViewModel.AddGroup();
+            NavigationService.Navigate(typeof(AppGroupsPage));
         }
 
         private void EnvironmentVariablesLaunchClicked(object sender, RoutedEventArgs e)

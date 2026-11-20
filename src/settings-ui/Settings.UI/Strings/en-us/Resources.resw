@@ -5081,6 +5081,106 @@ Activate by holding the key for the character you want to add an accent to, then
   <data name="Workspaces_ShortDescription" xml:space="preserve">
     <value>Open editor</value>
   </data>
+  <data name="AppGroups.ModuleDescription" xml:space="preserve">
+    <value>Group applications together in a folder on your desktop. Taskbar shortcuts are best effort and are not supported automatically on Windows 11.</value>
+  </data>
+  <data name="AppGroups.ModuleTitle" xml:space="preserve">
+    <value>App Groups</value>
+  </data>
+  <data name="Shell_AppGroups.Content" xml:space="preserve">
+    <value>App Groups</value>
+  </data>
+  <data name="AppGroups_EnableToggleControl_HeaderText.Header" xml:space="preserve">
+    <value>App Groups</value>
+    <comment>"App Groups" is the name of the utility</comment>
+  </data>
+  <data name="AppGroups_EnableToggleControl_HeaderText.Description" xml:space="preserve">
+    <value>Enable or disable the App Groups module.</value>
+  </data>
+  <data name="AppGroups_InfoBar.Title" xml:space="preserve">
+    <value>How App Groups work</value>
+  </data>
+  <data name="AppGroups_InfoBar.Message" xml:space="preserve">
+    <value>Applied groups become a folder of shortcuts on your desktop. Taskbar shortcuts are best effort: Windows 11 does not let apps pin items to the taskbar automatically. Change a group and select "Apply group" to update its shortcuts.</value>
+  </data>
+  <data name="AppGroups_GroupsSettingsGroup.Header" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="AppGroups_RestartExplorer.Header" xml:space="preserve">
+    <value>Restart Explorer after applying</value>
+  </data>
+  <data name="AppGroups_RestartExplorer.Description" xml:space="preserve">
+    <value>Only applies to Windows 10, where taskbar shortcuts become pins after Explorer restarts. Open File Explorer windows will be closed. Windows 11 ignores automatic taskbar pinning.</value>
+  </data>
+  <data name="AppGroups_Actions.Header" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="AppGroups_AddGroupButton.Content" xml:space="preserve">
+    <value>New group</value>
+  </data>
+  <data name="AppGroups_ApplyAllButton.Content" xml:space="preserve">
+    <value>Apply all groups</value>
+  </data>
+  <data name="AppGroups_GroupName.Header" xml:space="preserve">
+    <value>Group name</value>
+  </data>
+  <data name="AppGroups_ShowOnDesktop.Header" xml:space="preserve">
+    <value>Show on desktop</value>
+  </data>
+  <data name="AppGroups_ShowOnDesktop.Description" xml:space="preserve">
+    <value>Creates a desktop folder with a shortcut to each app in this group.</value>
+  </data>
+  <data name="AppGroups_PinToTaskbar.Header" xml:space="preserve">
+    <value>Taskbar shortcuts (best effort)</value>
+  </data>
+  <data name="AppGroups_PinToTaskbar.Description" xml:space="preserve">
+    <value>Creates a taskbar shortcut for each app in this group. Windows 11 ignores these files; pin the apps manually from the Start menu.</value>
+  </data>
+  <data name="AppGroups_Apps.Header" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="AppGroups_NoApps.Text" xml:space="preserve">
+    <value>No apps in this group yet.</value>
+  </data>
+  <data name="AppGroups_AddAppButton.Content" xml:space="preserve">
+    <value>Add app</value>
+  </data>
+  <data name="AppGroups_RemoveAppButton.Content" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="AppGroups_ApplyButton.Content" xml:space="preserve">
+    <value>Apply group</value>
+  </data>
+  <data name="AppGroups_DeleteButton.Content" xml:space="preserve">
+    <value>Delete group</value>
+  </data>
+  <data name="AppGroups_LaunchButtonControl.Header" xml:space="preserve">
+    <value>Create an app group</value>
+  </data>
+  <data name="AppGroups_LaunchButtonControl.Description" xml:space="preserve">
+    <value>Open App Groups and add applications to a desktop group or create taskbar shortcuts.</value>
+  </data>
+  <data name="AppGroups_StatusApplied" xml:space="preserve">
+    <value>App Groups applied.</value>
+  </data>
+  <data name="AppGroups_StatusTaskbarBestEffort" xml:space="preserve">
+    <value>Groups applied. Taskbar shortcut files were created; they become visible after Explorer restarts.</value>
+  </data>
+  <data name="AppGroups_StatusTaskbarUnsupported" xml:space="preserve">
+    <value>Groups applied to the desktop. Windows 11 does not support automatic taskbar pinning, so no taskbar shortcuts were created.</value>
+  </data>
+  <data name="AppGroups_DefaultGroupName" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="AppGroups_SelectAppDialogTitle" xml:space="preserve">
+    <value>Select an application</value>
+  </data>
+  <data name="AppGroups_TaskbarUnsupported.Title" xml:space="preserve">
+    <value>Taskbar pinning is not available on Windows 11</value>
+  </data>
+  <data name="AppGroups_TaskbarUnsupported.Message" xml:space="preserve">
+    <value>Windows 11 does not let apps pin items to the taskbar automatically. App Groups can still create a desktop folder; pin the apps manually from the Start menu.</value>
+  </data>
   <data name="Shell_ZoomIt.Content" xml:space="preserve">
     <value>ZoomIt</value>
     <comment>{Locked="ZoomIt"}</comment>

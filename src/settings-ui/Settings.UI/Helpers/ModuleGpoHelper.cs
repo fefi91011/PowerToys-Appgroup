@@ -61,6 +61,7 @@ namespace Microsoft.PowerToys.Settings.UI.Helpers
             {
                 ModuleType.AdvancedPaste => typeof(AdvancedPastePage),
                 ModuleType.AlwaysOnTop => typeof(AlwaysOnTopPage),
+                ModuleType.AppGroups => typeof(AppGroupsPage),
                 ModuleType.AutoHideCursor => typeof(MouseUtilsPage),
                 ModuleType.Awake => typeof(AwakePage),
                 ModuleType.CmdPal => typeof(CmdPalPage),

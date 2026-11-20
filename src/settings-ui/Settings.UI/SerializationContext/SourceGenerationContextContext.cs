@@ -15,6 +15,7 @@ namespace Microsoft.PowerToys.Settings.UI.SerializationContext;
 
 [JsonSerializable(typeof(ActionMessage))]
 [JsonSerializable(typeof(AdvancedPasteSettings))]
+[JsonSerializable(typeof(AppGroupsSettings))]
 [JsonSerializable(typeof(AlwaysOnTopSettings))]
 [JsonSerializable(typeof(AutoHideCursorSettings))]
 [JsonSerializable(typeof(ColorPickerSettings))]

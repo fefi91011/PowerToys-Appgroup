@@ -298,6 +298,12 @@
                             </NavigationViewItem.InfoBadge>
                         </NavigationViewItem>
                         <NavigationViewItem
+                            x:Name="AppGroupsNavigationItem"
+                            x:Uid="Shell_AppGroups"
+                            helpers:NavHelper.NavigateTo="views:AppGroupsPage"
+                            AutomationProperties.AutomationId="AppGroupsNavItem"
+                            Icon="{ui:BitmapIcon Source=/Assets/Settings/Icons/AppGroups.png}" />
+                        <NavigationViewItem
                             x:Name="WorkspacesNavigationItem"
                             x:Uid="Shell_Workspaces"
                             helpers:NavHelper.NavigateTo="views:WorkspacesPage"

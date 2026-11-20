@@ -479,6 +479,23 @@ namespace Microsoft.PowerToys.Settings.UI.Library
             }
         }
 
+        private bool appGroups; // defaulting to off
+
+        [JsonPropertyName("AppGroups")]
+        public bool AppGroups
+        {
+            get => appGroups;
+            set
+            {
+                if (appGroups != value)
+                {
+                    LogTelemetryEvent(value);
+                    appGroups = value;
+                    NotifyChange();
+                }
+            }
+        }
+
         private bool workspaces; // defaulting to off
 
         [JsonPropertyName("Workspaces")]

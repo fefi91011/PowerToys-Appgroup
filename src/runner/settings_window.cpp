@@ -833,6 +833,8 @@ std::string ESettingsWindowNames_to_string(ESettingsWindowNames value)
         return "PowerDisplay";
     case ESettingsWindowNames::GrabAndMove:
         return "GrabAndMove";
+    case ESettingsWindowNames::AppGroups:
+        return "AppGroups";
     default:
     {
         Logger::error(L"Can't convert ESettingsWindowNames value={} to string", static_cast<int>(value));
@@ -975,6 +977,10 @@ ESettingsWindowNames ESettingsWindowNames_from_string(std::string value)
     else if (value == "PowerDisplay")
     {
         return ESettingsWindowNames::PowerDisplay;
+    }
+    else if (value == "AppGroups")
+    {
+        return ESettingsWindowNames::AppGroups;
     }
     else if (value == "GrabAndMove")
     {
